@@ -9,6 +9,11 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
+    <style>
+        .glass { background: rgba(15, 23, 42, 0.85); backdrop-filter: blur(16px); }
+        .hero-bg { background: linear-gradient(135deg, #0f172a 0%, #1e2937 100%); }
+    </style>
 </head>
 <body class="bg-slate-950 text-slate-200">
 
@@ -39,6 +44,7 @@
         </div>
     </nav>
 
+    <!-- Hero -->
     <section class="hero-bg min-h-screen flex items-center pt-16">
         <div class="max-w-6xl mx-auto px-6 grid md:grid-cols-2 gap-12 items-center">
             <div data-aos="fade-right" data-aos-duration="800">
@@ -67,12 +73,30 @@
             </div>
             
             <div data-aos="fade-left" data-aos-duration="1000" class="flex justify-center">
-                <img src="images/profile.jpg" alt="Shyam Sureliya" class="w-80 h-80 object-cover rounded-3xl shadow-2xl shadow-cyan-500/30 border-4 border-cyan-400/30">
+                <img src="images/profile.jpg" alt="Shyam Sureliya" 
+                     class="w-80 h-80 object-cover rounded-3xl shadow-2xl shadow-cyan-500/30 border-4 border-cyan-400/30">
             </div>
         </div>
     </section>
 
+    <!-- Quick About -->
+    <section class="py-20 bg-slate-900">
+        <div class="max-w-4xl mx-auto px-6 text-center">
+            <h2 class="text-3xl font-bold text-cyan-400 mb-6">About Me</h2>
+            <p class="text-lg text-slate-300 leading-relaxed">
+                MBA Finance graduate currently working as Research Analyst at Junomoneta Finsol Pvt Ltd (Gift City). 
+                Specialized in equity research, technical analysis, and discretionary trading with consistent profitability.
+            </p>
+            <a href="experience.html" class="inline-block mt-8 text-cyan-400 hover:text-cyan-300 font-medium">
+                View Full Experience →
+            </a>
+        </div>
+    </section>
+
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({ once: true, duration: 900 });
+    </script>
     <script src="js/navigation.js"></script>
 </body>
 </html>
