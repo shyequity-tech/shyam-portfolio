@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background: #0a0f1c;
+    color: #e0f2fe;
+    line-height: 1.7;
+}
+
+.glass {
+    background: rgba(15, 23, 42, 0.85);
+    backdrop-filter: blur(16px);
+}
+
+.hero-bg {
+    background: linear-gradient(135deg, #0f172a 0%, #1e2937 100%);
+}
+
+.section-title {
+    font-size: 2.75rem;
+    background: linear-gradient(90deg, #67e8f9, #22d3ee);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.nav-link {
+    transition: all 0.3s;
+}
+
+.nav-link:hover {
+    color: #67e8f9;
+    transform: translateY(-2px);
+}
+
+.btn-hover {
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.btn-hover:hover {
+    transform: translateY(-4px) scale(1.05);
+    box-shadow: 0 20px 25px -5px rgb(103 232 249 / 0.3);
+}
+
+.table-container {
+    overflow-x: auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 16px 12px;
+    text-align: center;
+}
+
+th {
+    background: #1e2937;
+    color: #67e8f9;
+}
+
+tr:nth-child(even) {
+    background: #0f172a;
+}
+
+.positive {
+    color: #4ade80;
+    font-weight: 600;
+}
+
+.negative {
+    color: #f87171;
+    font-weight: 600;
+}
