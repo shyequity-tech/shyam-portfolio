@@ -11,16 +11,39 @@
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     
     <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+        
+        body { font-family: 'Inter', sans-serif; }
         .glass { background: rgba(15, 23, 42, 0.85); backdrop-filter: blur(16px); }
         .hero-bg { background: linear-gradient(135deg, #0f172a 0%, #1e2937 100%); }
+        
+        .mobile-menu {
+            max-height: 0;
+            overflow: hidden;
+            transition: all 0.4s ease-in-out;
+        }
+        .mobile-menu.open {
+            max-height: 420px;
+            padding-top: 1rem;
+            padding-bottom: 1rem;
+        }
+        
+        .skill-tag {
+            transition: all 0.3s;
+        }
+        .skill-tag:hover {
+            background-color: #67e8f9;
+            color: #0a0f1c;
+            transform: translateY(-2px);
+        }
     </style>
 </head>
 <body class="bg-slate-950 text-slate-200">
 
+    <!-- Navbar - No Logo -->
     <nav class="fixed top-0 w-full glass border-b border-cyan-500/20 z-50">
-        <div class="max-w-6xl mx-auto px-6 py-5 flex justify-between items-center">
-            <a href="index.html" class="text-2xl font-bold text-cyan-400">SS</a>
-            <div class="hidden md:flex gap-8 text-sm font-medium">
+        <div class="max-w-6xl mx-auto px-6 py-5 flex justify-end items-center">
+            <div class="hidden md:flex items-center gap-8 text-sm font-medium">
                 <a href="index.html" class="nav-link text-cyan-400">Home</a>
                 <a href="experience.html" class="nav-link">Experience</a>
                 <a href="education.html" class="nav-link">Education</a>
@@ -29,8 +52,12 @@
                 <a href="trading-roi.html" class="nav-link">Trading ROI</a>
                 <a href="contact.html" class="nav-link">Contact</a>
             </div>
-            <button id="mobile-menu-btn" class="md:hidden text-3xl text-cyan-400"><i class="fas fa-bars"></i></button>
+            <button id="mobile-menu-btn" class="md:hidden text-3xl text-cyan-400">
+                <i class="fas fa-bars"></i>
+            </button>
         </div>
+
+        <!-- Mobile Menu -->
         <div id="mobile-menu" class="mobile-menu md:hidden bg-slate-900 border-t border-cyan-500/20 px-6">
             <div class="flex flex-col gap-6 py-6 text-lg font-medium">
                 <a href="index.html" class="mobile-link">Home</a>
@@ -50,7 +77,7 @@
             <div data-aos="fade-right" data-aos-duration="800">
                 <h1 class="text-5xl md:text-6xl font-bold leading-tight mb-4">Shyam Sureliya</h1>
                 <p class="text-2xl text-cyan-400 mb-2">MBA Finance • Research Analyst & Trader</p>
-                <p class="text-lg text-slate-400 mb-8">NISM XV & VIII Certified | Turning Market Data into Actionable Trading Signals</p>
+                <p class="text-lg text-slate-400 mb-8">NISM XV & VIII Certified | Identifying actionable trading signals through research and technical analysis.</p>
                 
                 <div class="flex flex-col sm:flex-row gap-4">
                     <a href="contact.html" class="btn-hover px-8 py-4 bg-cyan-400 hover:bg-cyan-300 text-slate-950 font-semibold rounded-2xl flex items-center justify-center gap-3 text-lg">
@@ -60,38 +87,79 @@
                         <i class="fas fa-download"></i> Download Resume
                     </a>
                 </div>
-
-                <div class="mt-12">
-                    <p class="text-slate-400 text-sm uppercase tracking-widest mb-4">Connect With Me</p>
-                    <div class="flex gap-6 text-4xl">
-                        <a href="https://linkedin.com/in/shyam-sureliya" target="_blank" class="social-icon text-slate-300 hover:text-[#0a66c2]"><i class="fab fa-linkedin"></i></a>
-                        <a href="mailto:shyamsureliya4252@gmail.com" class="social-icon text-slate-300 hover:text-red-400"><i class="fas fa-envelope"></i></a>
-                        <a href="tel:+919104707006" class="social-icon text-slate-300 hover:text-green-400"><i class="fas fa-phone"></i></a>
-                        <a href="https://wa.me/919104707006" target="_blank" class="social-icon text-slate-300 hover:text-green-500"><i class="fab fa-whatsapp"></i></a>
-                    </div>
-                </div>
             </div>
             
             <div data-aos="fade-left" data-aos-duration="1000" class="flex justify-center">
                 <img src="images/profile.jpg" alt="Shyam Sureliya" 
-                     class="w-80 h-80 object-cover rounded-3xl shadow-2xl shadow-cyan-500/30 border-4 border-cyan-400/30">
+                     class="w-72 h-72 md:w-80 md:h-80 object-cover rounded-3xl shadow-2xl shadow-cyan-500/30 border-4 border-cyan-400/30">
             </div>
         </div>
     </section>
 
-    <!-- Quick About -->
+    <!-- Quick Links -->
+    <section class="py-12 bg-slate-900">
+        <div class="max-w-6xl mx-auto px-6">
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+                <a href="trading-roi.html" class="glass p-6 rounded-3xl text-center hover:border-cyan-400 transition-all">
+                    <i class="fas fa-chart-line text-3xl text-cyan-400 mb-3"></i>
+                    <p class="font-medium">Trading Performance</p>
+                    <p class="text-xs text-slate-400">View My ROI Track Record</p>
+                </a>
+                <a href="experience.html" class="glass p-6 rounded-3xl text-center hover:border-cyan-400 transition-all">
+                    <i class="fas fa-briefcase text-3xl text-cyan-400 mb-3"></i>
+                    <p class="font-medium">Experience</p>
+                    <p class="text-xs text-slate-400">Full Professional Journey</p>
+                </a>
+                <a href="skills.html" class="glass p-6 rounded-3xl text-center hover:border-cyan-400 transition-all">
+                    <i class="fas fa-tools text-3xl text-cyan-400 mb-3"></i>
+                    <p class="font-medium">Skills</p>
+                    <p class="text-xs text-slate-400">Technical & Research Skills</p>
+                </a>
+                <a href="projects.html" class="glass p-6 rounded-3xl text-center hover:border-cyan-400 transition-all">
+                    <i class="fas fa-folder-open text-3xl text-cyan-400 mb-3"></i>
+                    <p class="font-medium">Projects</p>
+                    <p class="text-xs text-slate-400">Case Studies & Research</p>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Preview -->
+    <section class="py-20 bg-slate-950">
+        <div class="max-w-6xl mx-auto px-6">
+            <h2 class="text-3xl font-bold text-cyan-400 text-center mb-10" data-aos="fade-up">Skills Preview</h2>
+            <div class="flex flex-wrap justify-center gap-3" data-aos="fade-up" data-aos-delay="100">
+                <span class="skill-tag px-6 py-3 bg-slate-900 border border-cyan-400/30 rounded-full text-sm">Equity Research</span>
+                <span class="skill-tag px-6 py-3 bg-slate-900 border border-cyan-400/30 rounded-full text-sm">Technical Analysis</span>
+                <span class="skill-tag px-6 py-3 bg-slate-900 border border-cyan-400/30 rounded-full text-sm">Options Trading</span>
+                <span class="skill-tag px-6 py-3 bg-slate-900 border border-cyan-400/30 rounded-full text-sm">Financial Modelling</span>
+                <span class="skill-tag px-6 py-3 bg-slate-900 border border-cyan-400/30 rounded-full text-sm">Nifty Strategies</span>
+                <span class="skill-tag px-6 py-3 bg-slate-900 border border-cyan-400/30 rounded-full text-sm">Risk Management</span>
+            </div>
+            <div class="text-center mt-8">
+                <a href="skills.html" class="text-cyan-400 hover:text-white font-medium">View All Skills & Certifications →</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Trading Performance Highlight -->
     <section class="py-20 bg-slate-900">
-        <div class="max-w-4xl mx-auto px-6 text-center">
-            <h2 class="text-3xl font-bold text-cyan-400 mb-6">About Me</h2>
-            <p class="text-lg text-slate-300 leading-relaxed">
-                MBA Finance graduate currently working as Research Analyst at Junomoneta Finsol Pvt Ltd (Gift City). 
-                Specialized in equity research, technical analysis, and discretionary trading with consistent profitability.
+        <div class="max-w-6xl mx-auto px-6 text-center">
+            <h2 class="text-3xl font-bold text-cyan-400 mb-6" data-aos="fade-up">Trading Performance</h2>
+            <p class="text-slate-400 mb-8 max-w-2xl mx-auto" data-aos="fade-up" data-aos-delay="100">
+                Consistently profitable discretionary trading over 13 months with scaling capital.
             </p>
-            <a href="experience.html" class="inline-block mt-8 text-cyan-400 hover:text-cyan-300 font-medium">
-                View Full Experience →
+            <a href="trading-roi.html" 
+               class="inline-flex items-center gap-3 bg-cyan-400 text-slate-950 px-10 py-4 rounded-2xl font-semibold hover:bg-cyan-300 transition-all">
+                <i class="fas fa-chart-bar"></i>
+                View Full ROI Track Record
             </a>
         </div>
     </section>
+
+    <footer class="py-10 text-center text-slate-500 border-t border-slate-800">
+        © 2025 Shyam Sureliya • Built for Excellence in Finance
+    </footer>
 
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
