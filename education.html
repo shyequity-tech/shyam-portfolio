@@ -5,69 +5,55 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Education | Shyam Sureliya</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <style>
-        .mobile-menu { max-height: 0; overflow: hidden; transition: all 0.4s ease-in-out; }
-        .mobile-menu.open { max-height: 480px; padding-top: 1rem; padding-bottom: 1rem; }
+        body { font-family: 'Inter', system-ui, sans-serif; }
+        .glass { background: rgba(15, 23, 42, 0.85); backdrop-filter: blur(12px); }
     </style>
 </head>
 <body class="bg-slate-950 text-slate-200">
 
-    <nav class="fixed top-0 w-full glass border-b border-cyan-500/20 z-50">
+    <nav class="fixed top-0 w-full bg-slate-900/90 border-b border-cyan-500/30 z-50">
         <div class="max-w-6xl mx-auto px-6 py-5 flex justify-end items-center">
-            <div class="hidden md:flex items-center gap-8 text-sm font-medium">
-                <a href="index.html" class="nav-link">Home</a>
-                <a href="experience.html" class="nav-link">Experience</a>
-                <a href="education.html" class="nav-link text-cyan-400">Education</a>
-                <a href="skills.html" class="nav-link">Skills</a>
-                <a href="projects.html" class="nav-link">Projects</a>
-                <a href="trading-roi.html" class="nav-link">Trading ROI</a>
-                <a href="contact.html" class="nav-link">Contact</a>
+            <div class="hidden md:flex gap-8 text-sm">
+                <a href="index.html" class="hover:text-cyan-400">Home</a>
+                <a href="experience.html" class="hover:text-cyan-400">Experience</a>
+                <a href="education.html" class="text-cyan-400 font-medium">Education</a>
+                <a href="skills.html" class="hover:text-cyan-400">Skills</a>
+                <a href="projects.html" class="hover:text-cyan-400">Projects</a>
+                <a href="trading-roi.html" class="hover:text-cyan-400">Trading ROI</a>
+                <a href="contact.html" class="hover:text-cyan-400">Contact</a>
             </div>
             <button id="mobile-menu-btn" class="md:hidden text-3xl text-cyan-400"><i class="fas fa-bars"></i></button>
         </div>
-        <div id="mobile-menu" class="mobile-menu md:hidden bg-slate-900 border-t border-cyan-500/20 px-6">
-            <div class="flex flex-col gap-6 py-6 text-lg font-medium">
-                <a href="index.html" class="mobile-link">Home</a>
-                <a href="experience.html" class="mobile-link">Experience</a>
-                <a href="education.html" class="mobile-link">Education</a>
-                <a href="skills.html" class="mobile-link">Skills</a>
-                <a href="projects.html" class="mobile-link">Projects</a>
-                <a href="trading-roi.html" class="mobile-link">Trading ROI</a>
-                <a href="contact.html" class="mobile-link">Contact</a>
-            </div>
-        </div>
     </nav>
 
-    <section class="pt-24 pb-20 px-6 max-w-5xl mx-auto">
-        <h1 class="text-4xl font-bold text-cyan-400 text-center mb-12" data-aos="fade-up">Education</h1>
+    <section class="pt-28 pb-20 px-6 max-w-5xl mx-auto">
+        <h1 class="text-4xl font-bold text-cyan-400 text-center mb-12">Educational Qualifications</h1>
+        
         <div class="grid md:grid-cols-2 gap-6">
-            <div class="glass p-8 rounded-3xl" data-aos="fade-up" data-aos-delay="100">
-                <h3 class="text-xl font-semibold text-cyan-400">MBA (Finance)</h3>
-                <p class="text-slate-400">Post Graduate Department of Business Management, Sardar Patel University</p>
+            <div class="glass p-8 rounded-3xl">
+                <h3 class="text-2xl font-semibold text-cyan-400">MBA (Finance)</h3>
+                <p class="text-slate-400 mt-2">Post Graduate Department of Business Management, Sardar Patel University</p>
                 <p class="mt-6 text-sm font-medium">2023 – 2025 | 74% (3.19/4.3)</p>
             </div>
-            <div class="glass p-8 rounded-3xl" data-aos="fade-up" data-aos-delay="200">
-                <h3 class="text-xl font-semibold text-cyan-400">B.Com (Finance & Accounting)</h3>
-                <p class="text-slate-400">Shri M.P. Shah Muni. Commerce College, Jamnagar</p>
+            <div class="glass p-8 rounded-3xl">
+                <h3 class="text-2xl font-semibold text-cyan-400">B.Com (Finance & Accounting)</h3>
+                <p class="text-slate-400 mt-2">Shri M.P. Shah Muni. Commerce College, Jamnagar</p>
                 <p class="mt-6 text-sm font-medium">2017 – 2020 | 55.32%</p>
             </div>
-            <div class="glass p-8 rounded-3xl" data-aos="fade-up" data-aos-delay="300">
-                <h3 class="text-xl font-semibold text-cyan-400">12th (GSEB)</h3>
-                <p class="text-slate-400">SMOV Boys Higher Secondary School of Commerce, Khambhaliya</p>
+            <div class="glass p-8 rounded-3xl">
+                <h3 class="text-2xl font-semibold text-cyan-400">12th (GSEB)</h3>
+                <p class="text-slate-400 mt-2">SMOV Boys Higher Secondary School of Commerce, Khambhaliya</p>
                 <p class="mt-6 text-sm font-medium">2017 | 77.57%</p>
             </div>
-            <div class="glass p-8 rounded-3xl" data-aos="fade-up" data-aos-delay="400">
-                <h3 class="text-xl font-semibold text-cyan-400">10th (GSEB)</h3>
-                <p class="text-slate-400">SNDT Boys High School, Khambhaliya</p>
+            <div class="glass p-8 rounded-3xl">
+                <h3 class="text-2xl font-semibold text-cyan-400">10th (GSEB)</h3>
+                <p class="text-slate-400 mt-2">SNDT Boys High School, Khambhaliya</p>
                 <p class="mt-6 text-sm font-medium">2015 | 60.67%</p>
             </div>
         </div>
     </section>
 
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script src="js/navigation.js"></script>
 </body>
 </html>
