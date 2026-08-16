@@ -3,42 +3,36 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Trading Performance & ROI | Shyam Sureliya</title>
+    <title>Trading ROI | Shyam Sureliya</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <style>
+        body { font-family: 'Inter', system-ui, sans-serif; }
+        .glass { background: rgba(15, 23, 42, 0.85); backdrop-filter: blur(12px); }
+        .positive { color: #4ade80; font-weight: 600; }
+        .negative { color: #f87171; font-weight: 600; }
+    </style>
 </head>
 <body class="bg-slate-950 text-slate-200">
-    <nav class="fixed top-0 w-full glass border-b border-cyan-500/20 z-50">
-        <div class="max-w-6xl mx-auto px-6 py-5 flex justify-between items-center">
-            <a href="index.html" class="text-2xl font-bold text-cyan-400">SS</a>
-            <div class="hidden md:flex gap-8 text-sm font-medium">
-                <a href="index.html" class="nav-link">Home</a>
-                <a href="experience.html" class="nav-link">Experience</a>
-                <a href="education.html" class="nav-link">Education</a>
-                <a href="skills.html" class="nav-link">Skills</a>
-                <a href="projects.html" class="nav-link">Projects</a>
-                <a href="trading-roi.html" class="nav-link text-cyan-400 font-semibold">Trading ROI</a>
-                <a href="contact.html" class="nav-link">Contact</a>
+
+    <nav class="fixed top-0 w-full bg-slate-900/90 border-b border-cyan-500/30 z-50">
+        <div class="max-w-6xl mx-auto px-6 py-5 flex justify-end items-center">
+            <div class="hidden md:flex gap-8 text-sm">
+                <a href="index.html" class="hover:text-cyan-400">Home</a>
+                <a href="experience.html" class="hover:text-cyan-400">Experience</a>
+                <a href="education.html" class="hover:text-cyan-400">Education</a>
+                <a href="skills.html" class="hover:text-cyan-400">Skills</a>
+                <a href="projects.html" class="hover:text-cyan-400">Projects</a>
+                <a href="trading-roi.html" class="text-cyan-400 font-medium">Trading ROI</a>
+                <a href="contact.html" class="hover:text-cyan-400">Contact</a>
             </div>
             <button id="mobile-menu-btn" class="md:hidden text-3xl text-cyan-400"><i class="fas fa-bars"></i></button>
         </div>
-        <div id="mobile-menu" class="mobile-menu md:hidden bg-slate-900 border-t border-cyan-500/20 px-6">
-            <div class="flex flex-col gap-6 py-6 text-lg font-medium">
-                <a href="index.html" class="mobile-link">Home</a>
-                <a href="experience.html" class="mobile-link">Experience</a>
-                <a href="education.html" class="mobile-link">Education</a>
-                <a href="skills.html" class="mobile-link">Skills</a>
-                <a href="projects.html" class="mobile-link">Projects</a>
-                <a href="trading-roi.html" class="mobile-link">Trading ROI</a>
-                <a href="contact.html" class="mobile-link">Contact</a>
-            </div>
-        </div>
     </nav>
 
-    <section class="pt-24 pb-20 px-6 max-w-6xl mx-auto">
+    <section class="pt-28 pb-20 px-6 max-w-6xl mx-auto">
         <h1 class="text-4xl font-bold text-cyan-400 text-center mb-4">Trading Performance & ROI</h1>
-        <p class="text-center text-slate-400 mb-12">Discretionary Trading Journey (Jul 2025 – Jul 2026)</p>
+        <p class="text-center text-slate-400 mb-10">Discretionary Trading Journey (Jul 2025 – Jul 2026)</p>
         
         <div class="glass rounded-3xl overflow-hidden">
             <table class="w-full">
@@ -50,14 +44,14 @@
                         <th class="px-6 py-5 text-right">ROI %</th>
                     </tr>
                 </thead>
-                <tbody class="divide-y divide-slate-700 text-sm">
+                <tbody class="divide-y divide-slate-700">
                     <tr><td class="px-6 py-4">Jul-25</td><td class="px-6 py-4 text-right">15,00,000</td><td class="px-6 py-4 text-right text-green-400">13,983</td><td class="px-6 py-4 text-right positive">0.90%</td></tr>
                     <tr><td class="px-6 py-4">Aug-25</td><td class="px-6 py-4 text-right">15,00,000</td><td class="px-6 py-4 text-right text-green-400">10,801</td><td class="px-6 py-4 text-right positive">0.70%</td></tr>
                     <tr><td class="px-6 py-4">Sep-25</td><td class="px-6 py-4 text-right">15,00,000</td><td class="px-6 py-4 text-right text-green-400">46,957</td><td class="px-6 py-4 text-right positive">3.10%</td></tr>
                     <tr><td class="px-6 py-4">Oct-25</td><td class="px-6 py-4 text-right">15,04,712</td><td class="px-6 py-4 text-right text-green-400">32,378</td><td class="px-6 py-4 text-right positive">2.20%</td></tr>
                     <tr><td class="px-6 py-4">Nov-25</td><td class="px-6 py-4 text-right">15,12,324</td><td class="px-6 py-4 text-right text-green-400">50,910</td><td class="px-6 py-4 text-right positive">3.40%</td></tr>
                     <tr><td class="px-6 py-4">Dec-25</td><td class="px-6 py-4 text-right">15,48,411</td><td class="px-6 py-4 text-right text-green-400">23,594</td><td class="px-6 py-4 text-right positive">1.30%</td></tr>
-                    <tr><td class="px-6 py-4">Jan-26</td><td class="px-6 py-4 text-right">21,36,974</td><td class="px-6 py-4 text-right text-red-400">-40,038</td><td class="px-6 py-4 text-right negative">-1.87%</td></tr>
+                    <tr><td class="px-6 py-4">Jan-26</td><td class="px-6 py-4 text-right">15,00,000</td><td class="px-6 py-4 text-right text-red-400">22,004</td><td class="px-6 py-4 text-right negative">]1.47%</td></tr>
                     <tr><td class="px-6 py-4">Feb-26</td><td class="px-6 py-4 text-right">15,30,816</td><td class="px-6 py-4 text-right text-green-400">51,731</td><td class="px-6 py-4 text-right positive">3.38%</td></tr>
                     <tr><td class="px-6 py-4">Mar-26</td><td class="px-6 py-4 text-right">15,63,297</td><td class="px-6 py-4 text-right text-red-400">-15,211</td><td class="px-6 py-4 text-right negative">-0.97%</td></tr>
                     <tr><td class="px-6 py-4">Apr-26</td><td class="px-6 py-4 text-right">24,86,126</td><td class="px-6 py-4 text-right text-green-400">67,947</td><td class="px-6 py-4 text-right positive">2.73%</td></tr>
@@ -67,13 +61,7 @@
                 </tbody>
             </table>
         </div>
-
-        <div class="mt-10 text-center text-slate-400 text-sm">
-            <p><strong>Total Positive Months:</strong> 11 | <strong>Negative Months:</strong> 2 | 
-            <strong>Overall Performance:</strong> Consistently profitable with scaling capital.</p>
-        </div>
     </section>
 
-    <script src="js/navigation.js"></script>
 </body>
 </html>

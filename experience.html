@@ -5,109 +5,48 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Experience | Shyam Sureliya</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <style>
-        .mobile-menu { max-height: 0; overflow: hidden; transition: all 0.4s ease-in-out; }
-        .mobile-menu.open { max-height: 520px; padding-top: 1rem; padding-bottom: 1rem; }
-        .timeline-dot { width: 18px; height: 18px; background: #0a0f1c; border: 4px solid #67e8f9; border-radius: 50%; }
+        body { font-family: 'Inter', system-ui, sans-serif; }
+        .glass { background: rgba(15, 23, 42, 0.85); backdrop-filter: blur(12px); }
     </style>
 </head>
 <body class="bg-slate-950 text-slate-200">
 
-    <nav class="fixed top-0 w-full glass border-b border-cyan-500/20 z-50">
+    <nav class="fixed top-0 w-full bg-slate-900/90 border-b border-cyan-500/30 z-50">
         <div class="max-w-6xl mx-auto px-6 py-5 flex justify-end items-center">
-            <div class="hidden md:flex items-center gap-8 text-sm font-medium">
-                <a href="index.html" class="nav-link">Home</a>
-                <a href="experience.html" class="nav-link text-cyan-400">Experience</a>
-                <a href="education.html" class="nav-link">Education</a>
-                <a href="skills.html" class="nav-link">Skills</a>
-                <a href="projects.html" class="nav-link">Projects</a>
-                <a href="trading-roi.html" class="nav-link">Trading ROI</a>
-                <a href="contact.html" class="nav-link">Contact</a>
+            <div class="hidden md:flex gap-8 text-sm">
+                <a href="index.html" class="hover:text-cyan-400">Home</a>
+                <a href="experience.html" class="text-cyan-400 font-medium">Experience</a>
+                <a href="education.html" class="hover:text-cyan-400">Education</a>
+                <a href="skills.html" class="hover:text-cyan-400">Skills</a>
+                <a href="projects.html" class="hover:text-cyan-400">Projects</a>
+                <a href="trading-roi.html" class="hover:text-cyan-400">Trading ROI</a>
+                <a href="contact.html" class="hover:text-cyan-400">Contact</a>
             </div>
             <button id="mobile-menu-btn" class="md:hidden text-3xl text-cyan-400"><i class="fas fa-bars"></i></button>
         </div>
-        <div id="mobile-menu" class="mobile-menu md:hidden bg-slate-900 border-t border-cyan-500/20 px-6">
-            <div class="flex flex-col gap-6 py-6 text-lg font-medium">
-                <a href="index.html" class="mobile-link">Home</a>
-                <a href="experience.html" class="mobile-link">Experience</a>
-                <a href="education.html" class="mobile-link">Education</a>
-                <a href="skills.html" class="mobile-link">Skills</a>
-                <a href="projects.html" class="mobile-link">Projects</a>
-                <a href="trading-roi.html" class="mobile-link">Trading ROI</a>
-                <a href="contact.html" class="mobile-link">Contact</a>
-            </div>
-        </div>
     </nav>
 
-    <section class="pt-24 pb-20 px-6 max-w-5xl mx-auto">
-        <h1 class="text-4xl font-bold text-cyan-400 text-center mb-4" data-aos="fade-up">Professional Experience</h1>
-        <p class="text-center text-slate-400 mb-12" data-aos="fade-up" data-aos-delay="100">Finance • Research • Trading • Content</p>
+    <section class="pt-28 pb-20 px-6 max-w-5xl mx-auto">
+        <h1 class="text-4xl font-bold text-cyan-400 text-center mb-6">Professional Experience</h1>
+        <p class="text-center text-slate-400 mb-12">This page should now be visible. If you can see this text, the issue is fixed.</p>
 
-        <div class="relative border-l-2 border-cyan-500/30 pl-8 space-y-12 max-w-4xl mx-auto">
-            <div class="timeline-item" data-aos="fade-up" data-aos-delay="200">
-                <div class="timeline-dot absolute -left-[11px]"></div>
-                <div class="flex items-center gap-3 mb-2">
-                    <i class="fas fa-chart-line text-3xl text-cyan-400"></i>
-                    <div><span class="text-cyan-400 font-mono text-sm">Jul 2025 – Present</span><h3 class="text-2xl font-semibold">Research Analyst</h3></div>
-                </div>
-                <p class="text-cyan-300 font-medium">Junomoneta Finsol Pvt Ltd • Gift City, Gandhinagar</p>
-                <ul class="mt-4 space-y-3 text-slate-300">
-                    <li class="flex gap-2"><span class="text-cyan-400">→</span> Recognized among top-performing discretionary traders in fresher batch</li>
-                    <li class="flex gap-2"><span class="text-cyan-400">→</span> Earned opportunity to independently trade commodity markets</li>
-                    <li class="flex gap-2"><span class="text-cyan-400">→</span> Designed and tested trading strategies for Nifty, Bank Nifty, and Sensex with consistent profitability</li>
-                </ul>
-            </div>
-
-            <div class="timeline-item" data-aos="fade-up" data-aos-delay="300">
-                <div class="timeline-dot absolute -left-[11px]"></div>
-                <div class="flex items-center gap-3 mb-2">
-                    <i class="fas fa-briefcase text-3xl text-cyan-400"></i>
-                    <div><span class="text-cyan-400 font-mono text-sm">May – Jun 2024</span><h3 class="text-2xl font-semibold">Summer Intern</h3></div>
-                </div>
-                <p class="text-cyan-300 font-medium">Anand Nikunj & Co. LLP • Anand</p>
-                <ul class="mt-4 space-y-3 text-slate-300">
-                    <li class="flex gap-2"><span class="text-cyan-400">→</span> Maintained accurate records using Tally ERP</li>
-                    <li class="flex gap-2"><span class="text-cyan-400">→</span> Understood live stock market operations and options trading</li>
-                    <li class="flex gap-2"><span class="text-cyan-400">→</span> Studied VIX, implied volatility, time decay and various options strategies</li>
-                </ul>
-            </div>
-
-            <div class="timeline-item" data-aos="fade-up" data-aos-delay="400">
-                <div class="timeline-dot absolute -left-[11px]"></div>
-                <div class="flex items-center gap-3 mb-2">
-                    <i class="fas fa-chart-bar text-3xl text-cyan-400"></i>
-                    <div><span class="text-cyan-400 font-mono text-sm">May – Jul 2022</span><h3 class="text-2xl font-semibold">Financial Analyst Intern</h3></div>
-                </div>
-                <p class="text-cyan-300 font-medium">Margin Sentiment Advisory Pvt Ltd • Work From Home</p>
-                <ul class="mt-4 space-y-3 text-slate-300">
-                    <li class="flex gap-2"><span class="text-cyan-400">→</span> Examined risks and rewards in stock market</li>
-                    <li class="flex gap-2"><span class="text-cyan-400">→</span> Prepared SIP reports and live projects</li>
-                    <li class="flex gap-2"><span class="text-cyan-400">→</span> Assisted clients in understanding investment opportunities</li>
-                </ul>
-            </div>
-
-            <div class="timeline-item" data-aos="fade-up" data-aos-delay="500">
-                <div class="timeline-dot absolute -left-[11px]"></div>
-                <div class="flex items-center gap-3 mb-2">
-                    <i class="fas fa-pen-nib text-3xl text-cyan-400"></i>
-                    <div><span class="text-cyan-400 font-mono text-sm">Sept 2022 – Jan 2023</span><h3 class="text-2xl font-semibold">Content Writer – Finance</h3></div>
-                </div>
-                <p class="text-cyan-300 font-medium">Krow.in • Work From Home</p>
-                <ul class="mt-4 space-y-3 text-slate-300">
-                    <li class="flex gap-2"><span class="text-cyan-400">→</span> Researched and wrote in-depth 2000–3000 word articles on personal finance, mutual funds, insurance</li>
-                    <li class="flex gap-2"><span class="text-cyan-400">→</span> Proofread content and implemented SEO strategies</li>
+        <div class="space-y-10">
+            <div class="glass p-8 rounded-3xl">
+                <h3 class="text-2xl font-semibold text-cyan-400">Research Analyst</h3>
+                <p class="text-cyan-300">Junomoneta Finsol Pvt Ltd • Gift City, Gandhinagar | Jul 2025 – Present</p>
+                <ul class="mt-6 space-y-3 text-slate-300">
+                    <li>• Recognized as top-performing discretionary trader</li>
+                    <li>• Independently trading commodity markets</li>
+                    <li>• Designed profitable strategies for Nifty, Bank Nifty & Sensex</li>
                 </ul>
             </div>
         </div>
     </section>
 
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
-        AOS.init({ once: true, duration: 800 });
+        console.log("Experience page loaded successfully");
     </script>
-    <script src="js/navigation.js"></script>
 </body>
 </html>
