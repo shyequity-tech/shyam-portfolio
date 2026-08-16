@@ -5,29 +5,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact | Shyam Sureliya</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <style>
+        body { font-family: 'Inter', system-ui, sans-serif; }
+        .glass { background: rgba(15, 23, 42, 0.85); backdrop-filter: blur(12px); }
         .mobile-menu { max-height: 0; overflow: hidden; transition: all 0.4s ease-in-out; }
         .mobile-menu.open { max-height: 480px; padding-top: 1rem; padding-bottom: 1rem; }
     </style>
 </head>
 <body class="bg-slate-950 text-slate-200">
 
-    <nav class="fixed top-0 w-full glass border-b border-cyan-500/20 z-50">
+    <nav class="fixed top-0 w-full bg-slate-900/90 border-b border-cyan-500/30 z-50">
         <div class="max-w-6xl mx-auto px-6 py-5 flex justify-end items-center">
-            <div class="hidden md:flex items-center gap-8 text-sm font-medium">
-                <a href="index.html" class="nav-link">Home</a>
-                <a href="experience.html" class="nav-link">Experience</a>
-                <a href="education.html" class="nav-link">Education</a>
-                <a href="skills.html" class="nav-link">Skills</a>
-                <a href="projects.html" class="nav-link">Projects</a>
-                <a href="trading-roi.html" class="nav-link">Trading ROI</a>
-                <a href="contact.html" class="nav-link text-cyan-400">Contact</a>
+            <div class="hidden md:flex gap-8 text-sm font-medium">
+                <a href="index.html" class="hover:text-cyan-400">Home</a>
+                <a href="experience.html" class="hover:text-cyan-400">Experience</a>
+                <a href="education.html" class="hover:text-cyan-400">Education</a>
+                <a href="skills.html" class="hover:text-cyan-400">Skills</a>
+                <a href="projects.html" class="hover:text-cyan-400">Projects</a>
+                <a href="trading-roi.html" class="hover:text-cyan-400">Trading ROI</a>
+                <a href="contact.html" class="text-cyan-400 font-medium">Contact</a>
             </div>
             <button id="mobile-menu-btn" class="md:hidden text-3xl text-cyan-400"><i class="fas fa-bars"></i></button>
         </div>
+
         <div id="mobile-menu" class="mobile-menu md:hidden bg-slate-900 border-t border-cyan-500/20 px-6">
             <div class="flex flex-col gap-6 py-6 text-lg font-medium">
                 <a href="index.html" class="mobile-link">Home</a>
@@ -41,28 +42,63 @@
         </div>
     </nav>
 
-    <section class="pt-24 pb-20 px-6 max-w-4xl mx-auto text-center">
-        <h1 class="text-4xl font-bold text-cyan-400 mb-12" data-aos="fade-up">Let's Connect</h1>
-        <div class="grid md:grid-cols-3 gap-8">
-            <a href="mailto:shyamsureliya4252@gmail.com" class="glass p-10 rounded-3xl hover:border-cyan-400 transition-all group">
-                <i class="fas fa-envelope text-6xl text-cyan-400 mb-6 group-hover:scale-110 transition-transform"></i>
-                <p class="text-xl font-medium text-cyan-400">Email</p>
-                <p class="text-slate-300 mt-3">shyamsureliya4252@gmail.com</p>
+    <section class="pt-28 pb-20 px-6 max-w-4xl mx-auto text-center">
+        <h1 class="text-4xl font-bold text-cyan-400 mb-12">Let's Connect</h1>
+        
+        <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+            <!-- Email -->
+            <a href="mailto:shyamsureliya4252@gmail.com" class="glass p-8 rounded-3xl hover:border-cyan-400 transition-all group">
+                <i class="fas fa-envelope text-5xl text-cyan-400 mb-6 group-hover:scale-110 transition-transform"></i>
+                <p class="text-cyan-400 font-medium">Email</p>
+                <p class="text-slate-300 text-sm mt-2">shyamsureliya4252@gmail.com</p>
             </a>
-            <a href="tel:+919104707006" class="glass p-10 rounded-3xl hover:border-cyan-400 transition-all group">
-                <i class="fas fa-phone text-6xl text-cyan-400 mb-6 group-hover:scale-110 transition-transform"></i>
-                <p class="text-xl font-medium text-cyan-400">Phone</p>
-                <p class="text-slate-300 mt-3">+91 91047 07006</p>
+            
+            <!-- Phone -->
+            <a href="tel:+919104707006" class="glass p-8 rounded-3xl hover:border-cyan-400 transition-all group">
+                <i class="fas fa-phone text-5xl text-cyan-400 mb-6 group-hover:scale-110 transition-transform"></i>
+                <p class="text-cyan-400 font-medium">Call</p>
+                <p class="text-slate-300 text-sm mt-2">+91 91047 07006</p>
             </a>
-            <a href="https://linkedin.com/in/shyam-sureliya" target="_blank" class="glass p-10 rounded-3xl hover:border-cyan-400 transition-all group">
-                <i class="fab fa-linkedin text-6xl text-cyan-400 mb-6 group-hover:scale-110 transition-transform"></i>
-                <p class="text-xl font-medium text-cyan-400">LinkedIn</p>
-                <p class="text-slate-300 mt-3">Connect with me</p>
+            
+            <!-- WhatsApp -->
+            <a href="https://wa.me/919104707006" target="_blank" class="glass p-8 rounded-3xl hover:border-cyan-400 transition-all group">
+                <i class="fab fa-whatsapp text-5xl text-green-400 mb-6 group-hover:scale-110 transition-transform"></i>
+                <p class="text-green-400 font-medium">WhatsApp</p>
+                <p class="text-slate-300 text-sm mt-2">Chat with me</p>
+            </a>
+            
+            <!-- LinkedIn -->
+            <a href="https://linkedin.com/in/shyam-sureliya" target="_blank" class="glass p-8 rounded-3xl hover:border-cyan-400 transition-all group">
+                <i class="fab fa-linkedin text-5xl text-[#0a66c2] mb-6 group-hover:scale-110 transition-transform"></i>
+                <p class="text-[#0a66c2] font-medium">LinkedIn</p>
+                <p class="text-slate-300 text-sm mt-2">Connect with me</p>
             </a>
         </div>
     </section>
 
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script src="js/navigation.js"></script>
+    <script>
+        const menuBtn = document.getElementById('mobile-menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+        let isOpen = false;
+
+        menuBtn.addEventListener('click', () => {
+            isOpen = !isOpen;
+            if (isOpen) {
+                mobileMenu.classList.add('open');
+                menuBtn.innerHTML = '<i class="fas fa-times"></i>';
+            } else {
+                mobileMenu.classList.remove('open');
+                menuBtn.innerHTML = '<i class="fas fa-bars"></i>';
+            }
+        });
+
+        document.querySelectorAll('.mobile-link').forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.remove('open');
+                menuBtn.innerHTML = '<i class="fas fa-bars"></i>';
+                isOpen = false;
+            });
+        });
+    </script>
 </body>
 </html>

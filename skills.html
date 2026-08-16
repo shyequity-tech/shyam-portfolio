@@ -9,13 +9,15 @@
     <style>
         body { font-family: 'Inter', system-ui, sans-serif; }
         .glass { background: rgba(15, 23, 42, 0.85); backdrop-filter: blur(12px); }
+        .mobile-menu { max-height: 0; overflow: hidden; transition: all 0.4s ease-in-out; }
+        .mobile-menu.open { max-height: 480px; padding-top: 1rem; padding-bottom: 1rem; }
     </style>
 </head>
 <body class="bg-slate-950 text-slate-200">
 
     <nav class="fixed top-0 w-full bg-slate-900/90 border-b border-cyan-500/30 z-50">
         <div class="max-w-6xl mx-auto px-6 py-5 flex justify-end items-center">
-            <div class="hidden md:flex gap-8 text-sm">
+            <div class="hidden md:flex gap-8 text-sm font-medium">
                 <a href="index.html" class="hover:text-cyan-400">Home</a>
                 <a href="experience.html" class="hover:text-cyan-400">Experience</a>
                 <a href="education.html" class="hover:text-cyan-400">Education</a>
@@ -25,6 +27,18 @@
                 <a href="contact.html" class="hover:text-cyan-400">Contact</a>
             </div>
             <button id="mobile-menu-btn" class="md:hidden text-3xl text-cyan-400"><i class="fas fa-bars"></i></button>
+        </div>
+
+        <div id="mobile-menu" class="mobile-menu md:hidden bg-slate-900 border-t border-cyan-500/20 px-6">
+            <div class="flex flex-col gap-6 py-6 text-lg font-medium">
+                <a href="index.html" class="mobile-link">Home</a>
+                <a href="experience.html" class="mobile-link">Experience</a>
+                <a href="education.html" class="mobile-link">Education</a>
+                <a href="skills.html" class="mobile-link">Skills</a>
+                <a href="projects.html" class="mobile-link">Projects</a>
+                <a href="trading-roi.html" class="mobile-link">Trading ROI</a>
+                <a href="contact.html" class="mobile-link">Contact</a>
+            </div>
         </div>
     </nav>
 
@@ -58,5 +72,29 @@
         </div>
     </section>
 
+    <script>
+        const menuBtn = document.getElementById('mobile-menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+        let isOpen = false;
+
+        menuBtn.addEventListener('click', () => {
+            isOpen = !isOpen;
+            if (isOpen) {
+                mobileMenu.classList.add('open');
+                menuBtn.innerHTML = '<i class="fas fa-times"></i>';
+            } else {
+                mobileMenu.classList.remove('open');
+                menuBtn.innerHTML = '<i class="fas fa-bars"></i>';
+            }
+        });
+
+        document.querySelectorAll('.mobile-link').forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.remove('open');
+                menuBtn.innerHTML = '<i class="fas fa-bars"></i>';
+                isOpen = false;
+            });
+        });
+    </script>
 </body>
 </html>
