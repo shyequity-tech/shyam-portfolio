@@ -6,16 +6,18 @@
     <title>Experience | Shyam Sureliya</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <style>
-        body { font-family: 'Inter', system-ui, sans-serif; }
-        .glass { background: rgba(15, 23, 42, 0.85); backdrop-filter: blur(12px); }
+        .mobile-menu { max-height: 0; overflow: hidden; transition: all 0.4s ease-in-out; }
+        .mobile-menu.open { max-height: 520px; padding-top: 1rem; padding-bottom: 1rem; }
+        .section-header { color: #67e8f9; font-size: 1.35rem; font-weight: 600; margin-bottom: 1.5rem; }
     </style>
 </head>
 <body class="bg-slate-950 text-slate-200">
 
     <nav class="fixed top-0 w-full bg-slate-900/90 border-b border-cyan-500/30 z-50">
         <div class="max-w-6xl mx-auto px-6 py-5 flex justify-end items-center">
-            <div class="hidden md:flex gap-8 text-sm">
+            <div class="hidden md:flex gap-8 text-sm font-medium">
                 <a href="index.html" class="hover:text-cyan-400">Home</a>
                 <a href="experience.html" class="text-cyan-400 font-medium">Experience</a>
                 <a href="education.html" class="hover:text-cyan-400">Education</a>
@@ -26,27 +28,98 @@
             </div>
             <button id="mobile-menu-btn" class="md:hidden text-3xl text-cyan-400"><i class="fas fa-bars"></i></button>
         </div>
+        <div id="mobile-menu" class="mobile-menu md:hidden bg-slate-900 border-t border-cyan-500/20 px-6">
+            <div class="flex flex-col gap-6 py-6 text-lg font-medium">
+                <a href="index.html" class="mobile-link">Home</a>
+                <a href="experience.html" class="mobile-link">Experience</a>
+                <a href="education.html" class="mobile-link">Education</a>
+                <a href="skills.html" class="mobile-link">Skills</a>
+                <a href="projects.html" class="mobile-link">Projects</a>
+                <a href="trading-roi.html" class="mobile-link">Trading ROI</a>
+                <a href="contact.html" class="mobile-link">Contact</a>
+            </div>
+        </div>
     </nav>
 
     <section class="pt-28 pb-20 px-6 max-w-5xl mx-auto">
-        <h1 class="text-4xl font-bold text-cyan-400 text-center mb-6">Professional Experience</h1>
-        <p class="text-center text-slate-400 mb-12">This page should now be visible. If you can see this text, the issue is fixed.</p>
+        <h1 class="text-4xl font-bold text-cyan-400 text-center mb-4" data-aos="fade-up">Professional Experience</h1>
+        <p class="text-center text-slate-400 mb-16" data-aos="fade-up" data-aos-delay="100">Finance • Trading • Research • Content</p>
 
-        <div class="space-y-10">
-            <div class="glass p-8 rounded-3xl">
-                <h3 class="text-2xl font-semibold text-cyan-400">Research Analyst</h3>
+        <!-- 1. Finance Related Experience -->
+        <div class="mb-16" data-aos="fade-up">
+            <h2 class="section-header border-b border-cyan-400/30 pb-2">1. Finance Related Experience</h2>
+            
+            <div class="glass p-8 rounded-3xl mb-8">
+                <h3 class="text-xl font-semibold text-cyan-400">Research Analyst</h3>
                 <p class="text-cyan-300">Junomoneta Finsol Pvt Ltd • Gift City, Gandhinagar | Jul 2025 – Present</p>
-                <ul class="mt-6 space-y-3 text-slate-300">
-                    <li>• Recognized as top-performing discretionary trader</li>
-                    <li>• Independently trading commodity markets</li>
-                    <li>• Designed profitable strategies for Nifty, Bank Nifty & Sensex</li>
+                <ul class="mt-4 space-y-2 text-slate-300">
+                    <li>• Recognized among top-performing discretionary traders in fresher batch</li>
+                    <li>• Independently trading commodity markets based on performance</li>
+                    <li>• Designed and tested profitable trading strategies for Nifty, Bank Nifty, and Sensex</li>
+                </ul>
+            </div>
+
+            <div class="glass p-8 rounded-3xl">
+                <h3 class="text-xl font-semibold text-cyan-400">Financial Analyst Intern</h3>
+                <p class="text-cyan-300">Margin Sentiment Advisory Pvt Ltd • Work From Home | May 2022 – July 2022</p>
+                <ul class="mt-4 space-y-2 text-slate-300">
+                    <li>• Examined risks and rewards in stock market</li>
+                    <li>• Prepared SIP reports and supported live client projects</li>
+                    <li>• Assisted clients in understanding investment opportunities</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- 2. Internships -->
+        <div class="mb-16" data-aos="fade-up" data-aos-delay="100">
+            <h2 class="section-header border-b border-cyan-400/30 pb-2">2. Internships</h2>
+            
+            <div class="glass p-8 rounded-3xl mb-8">
+                <h3 class="text-xl font-semibold text-cyan-400">Summer Intern</h3>
+                <p class="text-cyan-300">Anand Nikunj & Co. LLP • Anand | May 2024 – June 2024</p>
+                <ul class="mt-4 space-y-2 text-slate-300">
+                    <li>• Gained hands-on experience in live stock market operations and options trading</li>
+                    <li>• Studied VIX, implied volatility, time decay, and various options strategies</li>
+                </ul>
+            </div>
+
+            <div class="glass p-8 rounded-3xl">
+                <h3 class="text-xl font-semibold text-cyan-400">Summer Intern</h3>
+                <p class="text-cyan-300">Bajaj Finserv Ltd • Anand | May 2024 – June 2024</p>
+                <ul class="mt-4 space-y-2 text-slate-300">
+                    <li>• Was offered the role of Sales Manager</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- 3. Content Writing -->
+        <div data-aos="fade-up" data-aos-delay="200">
+            <h2 class="section-header border-b border-cyan-400/30 pb-2">3. Content Writing</h2>
+            
+            <div class="glass p-8 rounded-3xl mb-8">
+                <h3 class="text-xl font-semibold text-cyan-400">Content Writer – Finance</h3>
+                <p class="text-cyan-300">Krow.in • Work From Home | Sept 2022 – Jan 2023</p>
+                <ul class="mt-4 space-y-2 text-slate-300">
+                    <li>• Researched and wrote in-depth 2000–3000 word articles on personal finance, mutual funds, insurance and investment topics</li>
+                    <li>• Improved article visibility through SEO and keyword optimization</li>
+                </ul>
+            </div>
+
+            <div class="glass p-8 rounded-3xl">
+                <h3 class="text-xl font-semibold text-cyan-400">Freelance Content Writer</h3>
+                <p class="text-cyan-300">CollegeDunia.com • Work From Home | Apr 2022 – Jan 2024</p>
+                <ul class="mt-4 space-y-2 text-slate-300">
+                    <li>• Created entrance-exams and education-related content</li>
+		    <li>• Was offered the role of freelance content editor</li>
                 </ul>
             </div>
         </div>
     </section>
 
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
-        console.log("Experience page loaded successfully");
+        AOS.init({ once: true, duration: 800 });
     </script>
+    <script src="js/navigation.js"></script>
 </body>
 </html>
